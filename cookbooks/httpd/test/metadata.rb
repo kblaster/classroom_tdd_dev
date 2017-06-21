@@ -1,0 +1,7 @@
+name 'test'
+maintainer 'kblaster'
+maintainer_email 'kblaster@kblaster.kk'
+license 'all_rights'
+description 'Test recipes :: Installs/Configures httpd'
+long_description 'Test recipes :: Installs/Configures httpd'
+version '0.1.0'
