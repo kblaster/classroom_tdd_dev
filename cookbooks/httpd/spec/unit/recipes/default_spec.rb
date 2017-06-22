@@ -28,6 +28,5 @@ describe 'httpd::default' do
     it 'includes the config service' do
       expect(chef_run).to include_recipe('httpd::service')
     end
-
   end
 end

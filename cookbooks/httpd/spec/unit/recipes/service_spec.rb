@@ -16,5 +16,13 @@ describe 'httpd::service' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'starts the necesary service' do
+      expect(chef_run).to start_service('httpd')
+    end
+
+    it 'enables the necesary service' do
+      expect(chef_run).to enable_service('httpd')
+    end
   end
 end
