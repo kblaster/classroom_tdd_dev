@@ -3,7 +3,9 @@
 # Recipe:: install
 #
 # Copyright (c) 2017 The Authors, All Rights Reserved.
+#require 'pry'
+#binding.pry
 
-package 'httpd' do
+package node['httpd']['package_name'] do
   action :install
 end
